@@ -1,0 +1,26 @@
+/* --- VARIABLES ---  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  /* COLORES */
+  --clr-pink: #e94057;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-grey: #adafbb;
+
+  /* TYPOS */
+  --typo-button: bold 14px "Montserrat";
+  --typo-global: 400 14px "Montserrat";
+  --typo-global-bold: bold 14px "Montserrat";
+  --typo-header: bold 34px "Montserrat";
+  --typo-title: bold 24px "Montserrat";
+  --typo-title-small: bold 16px "Montserrat";
+
+  /* MARGIN */
+  --margin-min: 10px;
+  --margin-small: 15px;
+  --margin-md-small: 30px;
+  --margin-md: 60px;
+  --margin-big: 120px;
+}

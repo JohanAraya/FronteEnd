@@ -1,0 +1,103 @@
+<div class="cnt-imgs">
+  <div class="cnt-big">
+    <img
+      src="../../../assets/img/faunaphotostudio_116327682_303128614232921_7520606251753666700_n.jpg"
+      class="img-big-index"
+    />
+  </div>
+
+  <div class="cnt-galeria">
+    <div class="txt-galeria">
+      <p class="txt-titular">Galería</p>
+      <a href="#" class="txt-ver">Ver más</a>
+    </div>
+    <div class="cnt-med">
+      <img
+        src="../../../assets/img/faunaphotostudio_104088370_139872321018510_59841965359891980_n.jpg"
+        class="img-med-index"
+      />
+      <img
+        src="../../../assets/img/faunaphotostudio_104239892_2769181093309779_986610392622740604_n.jpg"
+        class="img-med-index"
+      />
+    </div>
+
+    <div class="cnt-med">
+      <img
+        src="../../../assets/img/faunaphotostudio_106175324_565611007463143_3456510031947740585_n.jpg"
+        class="img-small-index"
+      />
+      <img
+        src="../../../assets/img//faunaphotostudio_119608349_367737884632510_1232880779821362670_n.jpg"
+        class="img-small-index"
+      />
+    </div>
+  </div>
+</div>
+<div class="cnt-info">
+  <div class="cnt-info-pet">
+    <div class="cnt-name cnt-pet-space">
+      <p class="info-main-title">Iggy</p>
+      <div class="txt-datos-pet">
+        <p class="info-input">Labrador,&nbsp;</p>
+        <p class="info-input">Macho</p>
+      </div>
+    </div>
+
+    <div class="cnt-location cnt-pet-space">
+      <p class="txt-titular">Locación</p>
+      <p class="info-input">Desamparados, San José</p>
+    </div>
+
+    <div class="cnt-about cnt-pet-space">
+      <p class="txt-titular">Sobre mi</p>
+      <p class="info-input-about">
+        ¡Mi nombre es Iggy y estoy buscando una perrita con la cual pueda salir
+        a jugar! Soy un perrito muy juguetón, noble y sobre todo muy interactivo
+        que siempre...
+      </p>
+    </div>
+  </div>
+
+  <div class="cnt-info-user">
+    <div class="cnt-name">
+      <p class="info-main-title">Mi dueño(a)</p>
+      <p class="info-input">María José Villalobos</p>
+      <p class="info-input">88900000</p>
+      <p class="info-input">maria@mail.com</p>
+    </div>
+
+    <div>
+      <img
+        src="../../../assets/img/faunaphotostudio_66620426_523089348230962_5578448468652129496_n.jpg"
+        class="img-photo"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="cnt-info-users">
+  <div class="info-personal">
+    <h2 id="profile-user-nombre"></h2>
+    <p id="profile-user-numero_id"></p>
+    <p id="profile-user-correo"></p>
+  </div>
+</div>
+
+<table class="table table-sm">
+  <tr *ngFor="let usuario of listUsuarios">
+    <td>{{ usuario.nombre }}</td>
+    <td>{{ usuario.apellido1 }}</td>
+    <td>{{ usuario.direccion }}</td>
+    <td>{{ usuario.telefono }}</td>
+    <td>
+      <i (click)="editarUsuario(usuario)" class="far fa-edit text-info"></i>
+    </td>
+    <td>
+      <i
+        (click)="eliminarUsuario(usuario._id)"
+        class="far fa-trash-alt text-danger"
+      ></i>
+    </td>
+  </tr>
+</table>

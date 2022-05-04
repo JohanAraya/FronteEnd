@@ -1,0 +1,62 @@
+<div class="cnt-princ">
+  <h1 class="title">Mi perfil</h1>
+
+  <div class="profile-pic">
+    <div class="profile-pic-div">
+      <img src="../../../assets/img/upload-pic.png" id="photo" />
+      <input type="file" id="file" />
+      <label for="file" id="uploadBtn">Subí una foto</label>
+    </div>
+  </div>
+
+  <div class="login-wrapper">
+    <div class="wrapper-sec">
+      <form [formGroup]="form" (ngSubmit)="registrarMascota()">
+        <div class="cnt-inputs">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            name="nombre"
+            form="nombre"
+            formControlName="nombre"
+          />
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Descripción"
+            name="descripcion"
+            form="descripcion"
+            formControlName="descripcion"
+          />
+        </div>
+
+        <div class="cnt-inputs">
+          <select formControlName="sexo">
+            <option value="" disabled selected>Elegir sexo</option>
+            <option *ngFor="let sexo of sexo" [value]="sexo.sexo">
+              {{ sexo.sexo }}
+            </option>
+          </select>
+
+          <select form-control>
+            <option value="" disabled selected>Elegir tipo</option>
+            <option *ngFor="let tipo of listTipo" [value]="tipo.Value">
+              {{ tipo.Value }}
+            </option>
+          </select>
+
+          <select form-control>
+            <option value="" disabled selected>Elegir raza</option>
+            <option *ngFor="let title of listRazaPerros" [value]="title.Value">
+              {{ title.Value }}
+            </option>
+          </select>
+        </div>
+
+        <button class="btn-pnk btn" type="submit">Confirmar</button>
+      </form>
+    </div>
+  </div>
+</div>

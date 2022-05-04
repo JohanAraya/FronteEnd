@@ -1,0 +1,81 @@
+<div class="cnt-princ">
+  <h1 class="title">Mi perfil</h1>
+
+  <div class="profile-pic">
+    <div class="profile-pic-div">
+      <img src="../../../assets/img/upload-pic.png" id="photo" />
+      <input type="file" id="file" />
+      <label for="file" id="uploadBtn">Subí una foto</label>
+    </div>
+  </div>
+
+  <div class="login-wrapper">
+    <div class="wrapper-sec">
+      <form [formGroup]="form" (ngSubmit)="registrarUsuario()">
+        <div class="cnt-inputs">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            name="nombre"
+            #userInput
+            form="nombre"
+            formControlName="nombre"
+          />
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Apellido"
+            name="apellido1"
+            formControlName="apellido1"
+          />
+        </div>
+
+        <div class="cnt-inputs">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Teléfono"
+            name="telefono"
+            formControlName="telefono"
+          />
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Dirección"
+            name="direccion"
+            formControlName="direccion"
+          />
+        </div>
+
+        <div class="cnt-inputs">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Correo electrónico"
+            name="correo"
+            formControlName="correo"
+          />
+
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            name="password"
+            formControlName="password"
+          />
+        </div>
+
+        <button class="btn-pnk btn" [disabled]="form.invalid" type="submit">
+          Confirmar
+        </button>
+        <div class="cnt-ingresa">
+          <p class="text-cuenta">¿Ya tenés una cuenta?</p>
+          <a routerLink="/login" class="text-link">Ingresá aquí</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+.title {
+  font: var(--typo-header);
+  color: var(--clr-black);
+  margin-top: var(--margin-big);
+}
+
+.cnt-princ {
+  text-align: center;
+}
+
+.login-wrapper {
+  margin-top: var(--margin-md);
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-sec {
+  display: flex;
+  max-width: 50%;
+  justify-content: space-around;
+}
+
+.cnt-inputs {
+  display: flex;
+  align-items: baseline;
+  gap: var(--margin-small);
+  margin-bottom: var(--margin-small);
+}
+
+.form-control {
+  font: var(--typo-global);
+  border-color: var(--clr-grey);
+}
+
+.btn-pnk {
+  margin-top: var(--margin-md);
+  padding: 8px 25px;
+  background-color: var(--clr-pink);
+  font: var(--typo-button);
+  color: var(--clr-white);
+  transition: background-color ease-in 300ms;
+}
+
+.btn-pnk:hover {
+  background-color: var(--clr-black);
+}
+
+.profile-pic {
+  margin-top: var(--margin-md-small);
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic-div {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+#uploadBtn {
+  color: var(--clr-grey);
+  font: var(--typo-global);
+}
+
+input.ng-touched.ng-invalid {
+  border-color: var(--clr-pink);
+}
+
+.cnt-ingresa {
+  margin-top: var(--margin-min);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: var(--margin-min);
+}
+
+.text-link {
+  color: var(--clr-pink);
+  font: var(--typo-global-bold);
+}

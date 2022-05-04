@@ -1,0 +1,49 @@
+.login-wrapper {
+  margin: 3rem auto;
+  width: 20rem;
+}
+
+.title {
+  font: var(--typo-title);
+  color: var(--clr-pink);
+  margin-top: var(--margin-big);
+}
+
+.text {
+  font: var(--typo-global);
+  margin-top: var(--margin-min);
+}
+
+.cnt-princ {
+  text-align: center;
+}
+
+.text-link {
+  color: var(--clr-pink);
+  font: var(--typo-global-bold);
+}
+
+.cnt-ingresa {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: var(--margin-min);
+}
+
+.btn-pnk {
+  margin-top: var(--margin-min);
+  padding: 8px 25px;
+  background-color: var(--clr-pink);
+  font: var(--typo-button);
+  color: var(--clr-white);
+  transition: background-color ease-in 300ms;
+}
+
+.btn-pnk:hover {
+  background-color: var(--clr-black);
+}
+
+.form-control {
+  font: var(--typo-global);
+  border-color: var(--clr-grey);
+}
